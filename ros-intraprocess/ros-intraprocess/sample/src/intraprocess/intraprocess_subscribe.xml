@@ -1,0 +1,5 @@
+<library path="lib/libintraprocess_subscribe">
+	<class name="nodelet_intraprocess_subscribe/Subscribe" type="nodelet_intraprocess_subscribe::Subscribe" base_class_type="nodelet::Nodelet">
+    <description>This is a intraprocess subscriber.</description>
+  </class>
+</library>

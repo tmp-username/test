@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="nodelet" type="nodelet" name="intraprocess_manager"  args="manager" output="screen"/>
+
+  <node pkg="nodelet" type="nodelet" name="Publish" args="load nodelet_intraprocess_publish/Publish intraprocess_manager" output="screen">
+		<remap from="/Publish/intraprocess_topic" to="intraprocess_topic"/>
+  </node>
+
+  <node pkg="nodelet" type="nodelet" name="Subscribe"  args="load nodelet_intraprocess_subscribe/Subscribe intraprocess_manager" output="screen">
+		<remap from="/Subscribe/intraprocess_topic" to="intraprocess_topic"/>
+  </node>
+
+</launch>

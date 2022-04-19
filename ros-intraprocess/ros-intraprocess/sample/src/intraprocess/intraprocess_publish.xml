@@ -1,0 +1,5 @@
+<library path="lib/libintraprocess_publish">
+	<class name="nodelet_intraprocess_publish/Publish" type="nodelet_intraprocess_publish::Publish" base_class_type="nodelet::Nodelet">
+    <description>This is a intraprocess publisher.</description>
+  </class>
+</library>
